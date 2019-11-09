@@ -1,0 +1,38 @@
+<nav id="nav">
+  <ul class="links">
+    {% if include.content == "" %}
+    <li class="navlink"><a class="active" href="/">Home</a></li>
+    {% else %}
+    <li class="navlink"><a href="/">Home</a></li>
+    {% endif %}
+    {% if include.content == "bands" %}
+    <li class="navlink">
+       <a class="active" href="/battleofthebands">Battle of the Bands</a>
+    </li>
+    {% else %}
+    <li class="navlink">
+      <a href="/battleofthebands">Battle of the Bands</a>
+    </li>
+    {% endif %}
+    {% if include.content == "hacks" %}
+    <li class="navlink"><a class="active" href="/expohacksiii">Expo Hacks III</a></li>
+    {% else %}
+    <li class="navlink"><a href="/expohacksiii">Expo Hacks III</a></li>
+    {% endif %}
+    {% if include.content == "arts" %}
+    <li class="navlink"><a class="active" href="/arts">Arts</a></li>
+    {% else %}
+    <li class="navlink"><a href="/arts">Arts</a></li>
+    {% endif %}
+    {% if include.content == "team" %}
+    <li class="navlink"><a class="active" href="/meettheteam">Meet the Team</a></li>
+    {% else %}
+    <li class="navlink"><a href="/meettheteam">Meet the Team</a></li>
+    {% endif %}
+    {% if include.content == "sponsors" %}
+    <li class="navlink"><a class="active" href="/sponsors">Sponsors</a></li>
+    {% else %}
+    <li class="navlink"><a href="/sponsors">Sponsors</a></li>
+    {% endif %}
+  </ul>
+</nav>

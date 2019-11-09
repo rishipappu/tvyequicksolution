@@ -1,0 +1,190 @@
+---
+---
+
+@import typography
+@import palette
+@import mixins
+@import extendables
+
+html,
+body
+    width: 100vw
+    overflow-x: hidden
+    scroll-behavior: smooth
+    @extend %ns
+
+#nav
+    position: fixed
+    z-index: 24
+    width: 100vw
+    background: rgba(255, 255, 255, 0.9)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    @extend %ns
+    +flexbox()
+    @extend %flex-center
+    .links
+        list-style-type: none
+        align-items: center
+        +flexbox()
+        @extend %ns
+
+.navlink > a
+    color: #444444
+    padding: 1em 0
+    text-decoration: none
+    @extend %qt
+
+.navlink:hover > a
+    box-shadow: inset 0 -5px 0px $primary
+    color: $primary
+    @extend %qt
+
+.navlink
+    text-align: center
+    font-family: $reg
+    padding: 1em
+    font-weight: bold
+    font-size: 1.2em
+    // margin: 0 1em
+    // +border(1px solid red, 0)
+
+.navlink > .active
+    color: $primary
+
+.content
+    @extend %flex-center
+
+.Site
+    +flexbox()
+
+.logo
+    @extend %flex-center
+    background: #ffffff
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
+    position: absolute
+    width: 7.5em
+    height: 7.5em
+    z-index: 10
+    @extend %qt
+    +border(5px solid transparent, 500px)
+    &:hover
+        @extend %qt
+        +border(15px solid $primary, 500)
+    img
+        width: 5em
+        margin-top: 2px
+
+.building
+    position: absolute
+    font-family: $reg
+    color: #444444
+    font-size: 3em
+    margin-top: 6em
+
+.event
+    height: 100vh
+    width: 50vw
+    +flex(1 0 50%)
+    @extend %flex-center
+    &::after
+        content: ""
+        position: absolute
+        width: 50vw
+        height: 100vh
+        background: rgba(0, 0, 0, 0.2)
+        z-index: 1
+    &:nth-child(1)
+        background-image: url('https://images.unsplash.com/photo-1526749464606-83091e34a261?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')
+        background-position: center
+        background-size: 100%
+        background-repeat: no-repeat
+        // background-image: url('../images/undraw_compose_music_ovo2.svg')
+    &:nth-child(2)
+        background-image: url('https://images.unsplash.com/photo-1542546068979-b6affb46ea8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')
+        // background-image: url('../images/undraw_programmer_imem.svg')
+        background-size: 100%
+        background-repeat: no-repeat
+        background-position: center
+
+.eventcontent
+    position: relative
+    z-index: 3
+    color: #ffffff
+    font-size: 2em
+    a
+        color: #ffffff
+        text-decoration: none
+    .band
+        font-family: $band
+        @extend %ns
+    .hack
+        font-family: monospace
+        @extend %ns
+
+.info
+    background: #ffffff
+    margin-top: 1em
+    text-align: center
+    padding: 0.5em
+
+.details
+    font-family: $reg
+    font-size: 0.8em
+    color: $primary
+    @extend %ns
+
+#openletter
+    padding: 4em
+    font-family: $reg
+    color: #444444
+    align-items: center
+    +flexbox()
+    .letter
+        margin-right: 4em
+        line-height: 2em
+        +flex(1 0 60%)
+        h3
+            color: $primary
+    img
+        width: 17.5em
+        height: 17.5em
+        margin-right: 4em
+        border-radius: 10px
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+
+#signature
+    font-weight: 600
+    color: #444444
+    line-height: 1em
+    @extend %ns
+    margin-top: 1em
+
+#signature + a
+    line-height: 1em
+    font-weight: 600
+    color: $primary
+    text-decoration: none
+    @extend %qt
+    &:hover
+        text-decoration: underline
+        @extend %qt
+
+/*=======BOTB=======*/
+
+/*=======Sponsors=======*/
+.sponsor-cell
+    width: 30em
+    text-align: center
+    margin-top: 20em
+    img
+        height: 10em
+    h1
+        color: #444444
+        font-family: $reg
+
+.sponsors-title
+    position: absolute
+    font-family: $reg
+    color: #444444
+    margin-top: -1.5em
+    font-size: 3.5em

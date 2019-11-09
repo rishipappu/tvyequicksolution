@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Holiday In Monday';
+    src: url('HolidayInMonday.eot');
+    src: local('Holiday In Monday'), local('HolidayInMonday'),
+        url('HolidayInMonday.eot?#iefix') format('embedded-opentype'),
+        url('HolidayInMonday.woff2') format('woff2'),
+        url('HolidayInMonday.woff') format('woff'),
+        url('HolidayInMonday.ttf') format('truetype'),
+        url('HolidayInMonday.svg#HolidayInMonday') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Holiday In Monday Personal Use';
+    src: url('HolidayInMondayPersonalUse.eot');
+    src: local('Holiday In Monday Personal Use'), local('HolidayInMondayPersonalUse'),
+        url('HolidayInMondayPersonalUse.eot?#iefix') format('embedded-opentype'),
+        url('HolidayInMondayPersonalUse.woff2') format('woff2'),
+        url('HolidayInMondayPersonalUse.woff') format('woff'),
+        url('HolidayInMondayPersonalUse.ttf') format('truetype'),
+        url('HolidayInMondayPersonalUse.svg#HolidayInMondayPersonalUse') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
